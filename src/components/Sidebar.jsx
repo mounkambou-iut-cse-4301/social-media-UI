@@ -9,7 +9,7 @@ import React from 'react'
 import { AccountBox, Group, Home, ModeNight, Pages, People, Person, Settings, Store } from '@mui/icons-material';
 import { Switch } from '@mui/material';
 
-export default function Sidebar() {
+export default function Sidebar({mode,setMode}) {
   return (
     <Box  flex={1} p={2} sx={{display:{xs:"none",sm:"block"}}}>
       <Box position="fixed">
@@ -75,7 +75,7 @@ export default function Sidebar() {
               <ListItemIcon>
                 < ModeNight/>
               </ListItemIcon>
-              <Switch  />            </ListItemButton>
+              <Switch  onChange={e=>setMode(mode==="light"?"dark":"light")}/>            </ListItemButton>
           </ListItem>
           </List>
     </Box>

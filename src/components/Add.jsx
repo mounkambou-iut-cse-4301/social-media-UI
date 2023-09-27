@@ -27,7 +27,7 @@ function Add() {
     onClose={e=>setOpen(false)}
     arial-labelledby="modal-modal-title"
     arial-describedby="modal-modal-description">
-        <Box width={400} height={280} bgcolor="white"
+        <Box width={400} height={280}bgcolor={"background.default"} color={"text.primary"}
         p={3}
         borderRadius={5}
         >
